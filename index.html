@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning</title>
+    <style>
+        #message {
+            display: none;
+            font-size: 24px;
+            color: #4CAF50;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="click.png" id="morningImage" alt="Click to get a good morning message" style="cursor: pointer;">
+    <div id="message">                                          Good Morning! Have a great day!</div>
+    <script>
+        document.getElementById('morningImage').addEventListener('click', function() {
+            document.getElementById('message').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
